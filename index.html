@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FormsProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="action_page.whatever" method="get" onsubmit ="return validateForm()">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required maxlength="20" autocomplete="on">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required maxlength="20" autocomplete="on">
+        <label for="age">Date of Birth</label>
+        <input type="date" id="age" name="age" required max="2004-05-05">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" maxlength="20">
+        <label for="interests">Interests:</label>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript" checked>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="on">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required minlength="6" maxlength="20" autocomplete="on">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6" maxlength="20">
+        <label for="rePassword">Repeat Password</label>
+        <input type="password" id="rePassword" name="rePassword" required minlength="6" maxlength="20">
+        <span id = "messege1"></span>
+        <div class="clearfix">
+            <input type="submit" value="Sign up">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

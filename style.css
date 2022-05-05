@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #4287f5;
+}
+form {
+    display: inherit;
+    flex-direction: inherit;
+}
+#messege1 {
+    color: #eb4034;
+}
+input[type=submit],input[type=submit]  {
+margin: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
