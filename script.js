@@ -6,7 +6,7 @@ function validateForm() {
         msg.innerHTML = "Passwords do not match baby";
         return false;  
     } else {
-        alert("Your passwords match or something");
+       // alert("Your passwords match or something");
         document.write("You successfully signed up");
     }  
 }
