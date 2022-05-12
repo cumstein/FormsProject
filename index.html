@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Forms</h1>
-    <form action="action_page.whatever" method="get" onsubmit ="return validateForm()">
+    <form action="action_page.whatever" method="get" onsubmit ="return validateForm2()">
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" name="firstName" required maxlength="20" autocomplete="on">
         <label for="lastName">Last Name</label>
@@ -27,16 +27,17 @@
         <input type="checkbox" id="javascript" name="javascript" value="javascript" checked>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required autocomplete="on">
+        <div id="error">Must be a valid email address</div>
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required minlength="6" maxlength="20" autocomplete="on">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required minlength="6" maxlength="20">
         <label for="rePassword">Repeat Password</label>
         <input type="password" id="rePassword" name="rePassword" required minlength="6" maxlength="20">
-        <span id = "messege1"></span>
+        <div id = "message1">Passwords do not match</div>
         <div class="clearfix">
-            <input type="submit" value="Sign up">
-            <input type="reset" value="Reset">
+            <input id="submit" type="submit" value="Sign up">
+            <input id="reset" type="reset" value="Reset">
         </div>
     </form>
     

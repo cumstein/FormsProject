@@ -5,7 +5,6 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background-color: #4287f5;
 }
 form {
     display: inherit;
@@ -22,3 +21,19 @@ margin: 10px;
     clear: both;
     display: table;
   }
+#submit {
+    background-color: lightgreen;
+  }
+  #reset {
+      background-color: lightblue;
+  }
+  #error {
+      display: none;
+      color: red;
+  }
+  input:invalid {
+    color: red;
+  }
+#message1 {
+    display: none;
+}
